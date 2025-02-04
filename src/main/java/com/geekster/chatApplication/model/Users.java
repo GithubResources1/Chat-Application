@@ -23,8 +23,8 @@ public class Users {
     private String password;
     @Column(name="email")
     private String email;
-    @Column(name="phone_number")
-    private String phoneNumber;
+    @Column(name="phone")
+    private String phone;
     @Column(name="gender")
     private String gender;
     @Column(name="first_name")
