@@ -1,4 +1,4 @@
-# Chat Application
+# Chat Application54321
 
 - ## Frameworks and Language used
   - #### Spring Boot Framework
@@ -66,7 +66,7 @@
   - #### MySQL Database : chat_application_db
   
 - ## Project Summary
-  In this project we have created 2 models namely;User, ChatHistory and Status. We have provided some endpoints and also in this section below we have given our API. Using this API we can perform the CRUD operations accordingly.
+  In thismodified project we have created 2 models namely;User, ChatHistory and Status. We have provided some endpoints and also in this section below we have given our API. Using this API we can perform the CRUD operations accordingly.
   
   End Points:
     - ##### /status   
