@@ -43,7 +43,7 @@ public class UserService {
         JSONObject response = new JSONObject();
         List<Users> user = userRepository.findByUsername(username);
         if(user.isEmpty()) {
-            response.put("errorMessage", "username doesn't exist");
+            response.put("errorMessage", "username doesn't exist. try again");
         } else {
             Users userObj = user.get(0);
             if(password.equals(userObj.getPassword())) {
