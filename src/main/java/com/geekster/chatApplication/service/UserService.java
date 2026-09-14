@@ -63,7 +63,7 @@ public class UserService {
         jsonObj.put("firstName", user.getFirstName());
         jsonObj.put("lastName", user.getLastName());
         jsonObj.put("age", user.getAge());
-        jsonObj.put("email", user.getEmail());
+        jsonObj.put("user_email", user.getuser_email());
         jsonObj.put("phoneNumber", user.getPhoneNumber());
         jsonObj.put("gender", user.getGender());
         jsonObj.put("createdDate", user.getCreatedDate());

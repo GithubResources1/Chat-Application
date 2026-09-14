@@ -152,13 +152,13 @@ public class UserController {
             errorList.put("firstName", "Missing parameter");
         }
 
-        if(userJson.has("email")) {
-            String email = userJson.getString("email");
-            if(!CommonUtils.isValidEmail(email)) {
-                errorList.put("email", "Please enter a valid email");
+        if(userJson.has("user_email")) {
+            String user_email = userJson.getString("user_email");
+            if(!CommonUtils.isValiduser_email(user_email)) {
+                errorList.put("user_email", "Please enter a valid user_email");
             }
         } else {
-            errorList.put("email", "Missing parameter");
+            errorList.put("user_email", "Missing parameter");
         }
 
         if(userJson.has("phoneNumber")) {
@@ -178,7 +178,7 @@ public class UserController {
         Users user = new Users();
         JSONObject json = new JSONObject(userData);
 
-        user.setEmail(json.getString("email"));
+        user.setuser_email(json.getString("user_email"));
         if(!json.has("isUpdate")) {
             user.setPassword(json.getString("password"));
         }
