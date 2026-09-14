@@ -11,13 +11,13 @@ public class CommonUtils {
         Matcher m = p.matcher(password);
         return m.matches();
     }
-    public static boolean isValidEmail(String email){
-        String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\."+
+    public static boolean isValiduser_email(String user_email){
+        String user_emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\."+
                 "[a-zA-Z0-9_+&*-]+)*@" +
                 "(?:[a-zA-Z0-9-]+\\.)+[a-z" +
                 "A-Z]{2,7}$";
-        Pattern pat = Pattern.compile(emailRegex);
-        return pat.matcher(email).matches();
+        Pattern pat = Pattern.compile(user_emailRegex);
+        return pat.matcher(user_email).matches();
     }
 
     public static boolean isValidPhoneNumber(String phoneNumber) {
